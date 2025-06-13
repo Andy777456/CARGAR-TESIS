@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+
+/* Estilos personalizados para el gradiente azul */
+.logo-gradient {
+    background: linear-gradient(135deg, #003366 0%, #0066cc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+-webkit-text-fill-color: red;
+    font-weight: 700;
+}
+
+/* Mejoras visuales adicionales */
+.sidebar-header {
+    padding: 1.2rem 1.5rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-bottom: 1px solid #dee2e6;
+}
+
+.sidebar-menu {
+    padding: 1.5rem 1rem;
+}
+
+.sidebar-menu .active {
+    background-color: #e3f2fd;
+    border-left: 4px solid #0d6efd;
+    color: #0d6efd !important;
+    font-weight: 500;
+}
+
+.sidebar-menu a {
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+}
+
+.sidebar-menu a:hover {
+    background-color: #f1f8ff;
+}
+
+.file-drop-zone {
+    border: 2px dashed #dee2e6;
+    border-radius: 0.75rem;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    background-color: #f8f9fa;
+}
+
+.file-drop-zone:hover {
+    border-color: #86b7fe;
+    background-color: #f1f8ff;
+}
+
+.upload-icon {
+    font-size: 3rem;
+    color: #0d6efd;
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #003366 0%, #0066cc 100%);
+    border: none;
+    padding: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #002244 0%, #0055aa 100%);
+}
+
+.btn-outline-secondary {
+    border-color: #6c757d;
+    color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #6c757d;
+    color: white;
+}
+
+.card {
+    border-radius: 0.75rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+}
+
+#wrapper {
+    min-height: 100vh;
+}
+
+#sidebar {
+    width: 280px;
+    box-shadow: 2px 0 10px rgba(1, 7, 82, 0.637);
+}
+
+#page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        width: 100%;
+    }
+}
