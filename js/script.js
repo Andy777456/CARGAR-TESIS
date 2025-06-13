@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Toggle sidebar en móviles
+    
     const sidebarToggle = document.getElementById('sidebarToggle');
     const wrapper = document.getElementById('wrapper');
     
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     return;
                 }
                 // Actualizar la interfaz de usuario para el archivo seleccionado
-                fileDropZoneIcon.textContent = 'description'; // Ícono para un archivo seleccionado
+                fileDropZoneIcon.textContent = 'description'; 
                 fileDropZoneIcon.classList.add('text-success');
                 fileDropZoneText.textContent = fileName;
                 fileDropZoneHint.textContent = 'Archivo seleccionado';
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 changeFileBtn.style.display = 'inline-block'; // Mostrar el botón
                 fileError.style.display = 'none'; // Ocultar mensaje de error
             } else {
-                // No file selected (e.g., user cancelled dialog), reset UI
+                
                 fileDropZoneIcon.textContent = 'cloud_upload';
                 fileDropZoneIcon.classList.remove('text-success');
                 fileDropZoneText.textContent = 'Haga clic para seleccionar un archivo PDF';
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 form.reset(); // Esto limpia todos los campos del formulario, incluido el input de archivo
                 form.classList.remove('was-validated');
                 
-                // Disparar el evento 'change' en fileInput para restablecer su visualización en la UI
+                
                 if (fileInput) {
                     const changeEvent = new Event('change', { bubbles: true });
                     fileInput.dispatchEvent(changeEvent);
@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             if (confirm('¿Está seguro que desea cerrar sesión?')) {
                 alert('Sesión cerrada correctamente');
-                // Aquí iría la redirección a la página de login, por ejemplo:
+                
                 window.location.href = '#';
             }
         });
